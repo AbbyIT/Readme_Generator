@@ -1,12 +1,12 @@
 
-Repo link - https://github.com/AbbyIT/Readme_Generator
+
 
 # Project
 
 The project invlove quickly and easily creating a README file by using a command-line application to generate one. The purpose of this project is to allows the project creator to devote more time to working on the project. The READme will consist of the folowings:
 
 
-      *  Description 
+      * Description 
       * Table of Contents 
       * Installation 
       * Usage 
@@ -19,8 +19,13 @@ The project invlove quickly and easily creating a README file by using a command
 ## Instructions
 
 
+## repo Link 
+
+https://github.com/AbbyIT/Readme_Generator
+https://abbyit.github.io/Readme_Generator/
 
 ## 💡 Hint
+
 
 
 ## License 

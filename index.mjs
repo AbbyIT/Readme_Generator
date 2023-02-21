@@ -2,30 +2,56 @@ import inquirer from 'inquirer';
 import fs from "fs/promises";
 
 
-const { myTitleLink, description, myRepoLink, license } = await inquirer
+const { TitleLink, description, RepoLink, license, Technologies, Questions, Content } = await inquirer
     .prompt([
+        // shows the title of the READme
         {
             type: 'input',
-            name: 'myTitleLink',
+            name: 'TitleLink',
             message: "What is the title of your READme file?",
 
         },
+        // Shows the Repo Link
         {
             type: 'input',
-            name: 'myRepoLink',
+            name: 'RepoLink',
             message: "What is your repo link?",
 
         },
+        // shows description of the READme
         {
             type: 'input',
             name: 'description',
             message: "Please provide a description of your project?",
 
         },
+        // shows 'Table of Content' for the project
+        // {
+        //     type: 'input',
+        //     name: 'Content',
+        //     message: "What information would you like in your 'Table of Content'?",
 
-        //  licences - users to choose from 3 licences types
+        // },
 
-       
+
+        // shows the Technologies used in the project
+        {
+            type: 'input',
+            name: 'Technologies',
+            message: "Please state the Technologies used in your project?",
+
+        },
+
+        // Shows Questions the user may have
+        {
+            type: 'input',
+            name: 'Questions',
+            message: "Do you have any Questions about the project?",
+
+        },
+
+        //  Users to choose from 3 licences types
+
         {
             type: 'list',
             name: 'license',
@@ -34,9 +60,9 @@ const { myTitleLink, description, myRepoLink, license } = await inquirer
 
         }
 
+
     ])
 
-console.log(license)
 
 let licenseURL;
 let licenseImg;
@@ -54,32 +80,44 @@ if (license === 'MIT License') {
 
 if (license === 'GPL License') {
     licenseURL = ' https://www.gnu.org/licenses/gpl-3.0.en.html'
-    licenseImg = 'https://img.shields.io/badge/License-$%7Blicense%7D-blue.svg'
+    licenseImg = '<img src = “https://img.shields.io/badge/License-${license}-blue.svg”>'
 
-
-    // filter(val) {
-    // return val.toLowerCase();
 }
 
 
-let readMeString = `#[Title]${myTitleLink}
+let readMeString = ` # Project Title 
+[Title]${TitleLink}
+    
+# Description of your project
+[description]${description}
+    
 
-     #   [description]${description}
+## Table of Contents
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
+
+
+# Technologies Used
+[Technologies] ${Technologies}
+
+# Deployment information     
+[RepoLink]${ RepoLink}
         
+               
+# Licenses
+Licenced by: ${license}
+* ${licenseURL}
+* ${licenseImg}
         
-        Deployment information 
-        
-        [RepoLink]${myRepoLink}
-        
-        License Distributed under the MIT License. See LICENSE.txt for more information.
-        
-        Contact details- Abby Egbo https://github.com/AbbyIT
-        
-        Licenced by: ${license}
-        ${licenseURL}
-        ${licenseImg}
-        
-        `
+ 
+# Any Questions?
+${Questions}
+
+`
 await fs.writeFile('README-Output.md', readMeString);
 
-    
+
