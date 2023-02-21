@@ -53,6 +53,5 @@ Screen shots - included on READMe
 * 
 * [Screenshot 2](https://user-images.githubusercontent.com/117487886/220480216-2603ee14-2f12-4e98-a9bd-256784acd7f5.jpg)
 * [Screenshot 3](https://user-images.githubusercontent.com/117487886/220480585-79118a00-48c0-4908-b99e-b575ae0d7c08.jpg)
-(https://watch.screencastify.com/v/wIEml7Fg4JtoCQ8rEHRA)
-
 ![Screenshot 1](https://user-images.githubusercontent.com/117487886/220480427-2e50be64-7dce-437f-a85a-ac544b1c18cf.jpg)
+(https://watch.screencastify.com/v/wIEml7Fg4JtoCQ8rEHRA)
