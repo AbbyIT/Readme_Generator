@@ -24,6 +24,18 @@ The project invlove quickly and easily creating a README file by using a command
 https://github.com/AbbyIT/Readme_Generator
 https://abbyit.github.io/Readme_Generator/
 
+
+Technologies used 
+
+*Vscode
+*Node
+*Inquirer
+*JavaScript
+*Sharecode for Screencastify (https://watch.screencastify.com/v/wIEml7Fg4JtoCQ8rEHRA)
+
+Screen shots - included on READMe
+
+
 ## 💡 Hint
 
 

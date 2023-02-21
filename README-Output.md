@@ -15,18 +15,18 @@
 
 
 # Technologies Used
-[Technologies] Vscode, Node, Inquirer, JavaScript
+[Technologies] Vscode, Node, Inquirer, JavaScript, screencastify
 
 # Deployment information     
 [RepoLink]https://github.com/AbbyIT/Readme_Generator
         
                
 # Licenses
-Licenced by: MIT License
-*  https://mit-license.org/
-* https://img.shields.io/badge/License-$%7Blicense%7D-blue.svg
+Licenced by: GPL License
+*  https://www.gnu.org/licenses/gpl-3.0.en.html
+* <img src = “https://img.shields.io/badge/License-${license}-blue.svg”>
         
  
 # Any Questions?
-No Questions
+No further Questions
 

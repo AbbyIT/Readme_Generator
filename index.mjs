@@ -25,15 +25,7 @@ const { TitleLink, description, RepoLink, license, Technologies, Questions, Cont
             message: "Please provide a description of your project?",
 
         },
-        // shows 'Table of Content' for the project
-        // {
-        //     type: 'input',
-        //     name: 'Content',
-        //     message: "What information would you like in your 'Table of Content'?",
-
-        // },
-
-
+        
         // shows the Technologies used in the project
         {
             type: 'input',
