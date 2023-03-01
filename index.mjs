@@ -2,7 +2,7 @@ import inquirer from 'inquirer';
 import fs from "fs/promises";
 
 
-const { TitleLink, description, RepoLink, license, Technologies, Questions, Content } = await inquirer
+const { TitleLink, description, RepoLink, license, Technologies, Installation, Usage, Contributing, Questions, Content, Testing} = await inquirer
     .prompt([
         // shows the title of the READme
         {
@@ -34,14 +34,44 @@ const { TitleLink, description, RepoLink, license, Technologies, Questions, Cont
 
         },
 
+        {
+            type: 'input',
+            name: 'Installation',
+            message: "What are your installation?",
+
+        },
+
+        {
+            type: 'input',
+            name: 'Usage',
+            message: "Please provide some usage information?",
+
+        },
+
+        {
+        type: 'input',
+        name: 'Testing',
+        message: "What type of testing did you carry out?",
+
+        },
+
+
+
         // Shows Questions the user may have
+        
+        {
+            type: 'input',
+            name: 'Contributing',
+            message: "Please provide your contributing details?",
+            
+        },
+        
         {
             type: 'input',
             name: 'Questions',
             message: "Do you have any Questions about the project?",
 
         },
-
         //  Users to choose from 3 licences types
 
         {
@@ -66,13 +96,13 @@ if (license === 'Apache 2.0 License') {
     licenseImg = 'https://img.shields.io/badge/License-$%7Blicense%7D-blue.svg'
 }
 if (license === 'MIT License') {
-    licenseURL = ' https://mit-license.org/'
+    licenseURL = 'https://mit-license.org/'
     licenseImg = 'https://img.shields.io/badge/License-$%7Blicense%7D-blue.svg'
 }
 
 if (license === 'GPL License') {
-    licenseURL = ' https://www.gnu.org/licenses/gpl-3.0.en.html'
-    licenseImg = '<img src = “https://img.shields.io/badge/License-${license}-blue.svg”>'
+    licenseURL = 'https://www.gnu.org/licenses/gpl-3.0.en.html'
+    licenseImg = 'https://img.shields.io/badge/License-${license}-blue.svg'
 
 }
 
@@ -85,20 +115,36 @@ let readMeString = ` # Project Title
     
 
 ## Table of Contents
-* [Installation](#installation)
-* [Usage](#usage)
-* [License](#license)
-* [Contributing](#contributing)
-* [Tests](#tests)
-* [Questions](#questions)
+
+* [Installation](#Installation)
+* [Usage](#Usage)
+* [license](#license)
+* [Contributing](#Contributing)
+* [Testing](#Testing)
+* [Questions](#Questions)
 
 
 # Technologies Used
 [Technologies] ${Technologies}
 
 # Deployment information     
-[RepoLink]${ RepoLink}
-        
+[RepoLink]${RepoLink}
+
+
+# Installation
+[Installation]${Installation}
+
+
+# Usage
+[Usage]${Usage}
+
+# Contributing
+[Contributing]${Contributing}
+
+# Testing
+[Testing]${Testing}
+
+    
                
 # Licenses
 Licenced by: ${license}
@@ -107,7 +153,7 @@ Licenced by: ${license}
         
  
 # Any Questions?
-${Questions}
+[Questions]${Questions}
 
 `
 await fs.writeFile('README-Output.md', readMeString);

@@ -1,32 +1,49 @@
  # Project Title 
-[Title]ReadMe - Generator Project
+[Title]Abby readme
     
 # Description of your project
-[description]The project involve quickly and easily creating a README file by using a command-line application to generate one.
+[description]Descreiption 
     
-
+<details>
 ## Table of Contents
-* [Installation](#installation)
-* [Usage](#usage)
-* [License](#license)
-* [Contributing](#contributing)
-* [Tests](#tests)
-* [Questions](#questions)
 
+* [Installation](#Installation)
+* [Usage](#Usage)
+* [license](#license)
+* [Contributing](#Contributing)
+* [Testing](#Testing)
+* [Questions](#Questions)
+
+</details>
 
 # Technologies Used
-[Technologies] Vscode, Node, Inquirer, JavaScript, screencastify
+[Technologies] Vscode
 
 # Deployment information     
-[RepoLink]https://github.com/AbbyIT/Readme_Generator
-        
+[RepoLink]Repolink
+
+
+# Installation
+[Installation]Node
+
+
+# Usage
+[Usage]READ me file - for documnatation
+
+# Contributing
+[Contributing]software contributing
+
+# Testing
+[Testing]undefined
+
+    
                
 # Licenses
-Licenced by: GPL License
-*  https://www.gnu.org/licenses/gpl-3.0.en.html
-* <img src = “https://img.shields.io/badge/License-${license}-blue.svg”>
+Licenced by: Apache 2.0 License
+* http://www.apache.org/licenses/
+* https://img.shields.io/badge/License-$%7Blicense%7D-blue.svg
         
  
 # Any Questions?
-No further Questions
+[Questions]no questions
 
