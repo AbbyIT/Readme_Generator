@@ -2,7 +2,7 @@ import inquirer from 'inquirer';
 import fs from "fs/promises";
 
 
-const { TitleLink, description, RepoLink, license, Technologies, Installation, Usage, Contributing, Questions, Content, Testing} = await inquirer
+const { TitleLink, description, RepoLink, Email, license, Technologies, Installation, Usage, Contributing, Questions, Content, Testing} = await inquirer
     .prompt([
         // shows the title of the READme
         {
@@ -18,6 +18,14 @@ const { TitleLink, description, RepoLink, license, Technologies, Installation, U
             message: "What is your repo link?",
 
         },
+
+        {
+            type: 'input',
+            name: 'Email',
+            message: "What is your Email Address?",
+
+        },
+
         // shows description of the READme
         {
             type: 'input',
@@ -93,67 +101,72 @@ let licenseImg;
 
 if (license === 'Apache 2.0 License') {
     licenseURL = 'http://www.apache.org/licenses/'
-    licenseImg = 'https://img.shields.io/badge/License-$%7Blicense%7D-blue.svg'
+    licenseImg = 'https://img.shields.io/badge/license-Apache-blue.svg'
 }
 if (license === 'MIT License') {
     licenseURL = 'https://mit-license.org/'
-    licenseImg = 'https://img.shields.io/badge/License-$%7Blicense%7D-blue.svg'
+    licenseImg = 'https://img.shields.io/badge/license-mit-blue.svg'
 }
 
 if (license === 'GPL License') {
     licenseURL = 'https://www.gnu.org/licenses/gpl-3.0.en.html'
-    licenseImg = 'https://img.shields.io/badge/License-${license}-blue.svg'
+    licenseImg = 'https://img.shields.io/badge/license-gpl-blue.svg'
 
 }
 
 
 let readMeString = ` # Project Title 
-[Title]${TitleLink}
+${TitleLink}
     
 # Description of your project
-[description]${description}
+${description}
     
 
 ## Table of Contents
 
-* [Installation](#Installation)
-* [Usage](#Usage)
-* [license](#license)
-* [Contributing](#Contributing)
-* [Testing](#Testing)
-* [Questions](#Questions)
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Testing](#testing)
+* [Technologies Used](#technologies-used)
+* [Questions](#any-questions)
+* [Deployment](#deployment-information)
 
 
-# Technologies Used
-[Technologies] ${Technologies}
+## Technologies Used
+${Technologies}
 
-# Deployment information     
-[RepoLink]${RepoLink}
-
-
-# Installation
-[Installation]${Installation}
+## Deployment information     
+${RepoLink}
+[GitHub Link:](${RepoLink})
 
 
-# Usage
-[Usage]${Usage}
+## Installation
+To install run the following command:
+${Installation}
 
-# Contributing
-[Contributing]${Contributing}
 
-# Testing
-[Testing]${Testing}
+## Usage
+${Usage}
 
-    
+## Contributing
+${Contributing}
+
+## Testing
+
+To run tests, run the following commands:
+${Testing}
                
-# Licenses
-Licenced by: ${license}
-* ${licenseURL}
-* ${licenseImg}
-        
+## Licenses
+Licensed by: ${license}
+
+[${license}](${licenseURL}) 
+
+![${license}](${licenseImg})  
  
-# Any Questions?
-[Questions]${Questions}
+## Any Questions
+If you have any questions, please contact me at ${Email}
 
 `
 await fs.writeFile('README-Output.md', readMeString);
