@@ -52,8 +52,12 @@ Screen shots - included on READMe
 * Instead of using promises, how can we use `async/await` and `try/catch` to control the flow of our asynchronous code?!
 
 SCREENSHOTS
-![image](https://user-images.githubusercontent.com/117487886/222931864-fbf2d768-89a8-4053-b039-2e9a1b2b1564.png)
+
+![image](https://user-images.githubusercontent.com/117487886/222932009-877c5642-41f1-4ea9-81bc-9b7928808146.png)
+
 <img width="416" alt="image" src="https://user-images.githubusercontent.com/117487886/222931891-9d3aeab0-87be-4063-97cb-256e71748fdd.png">
+
+<img width="680" alt="image" src="https://user-images.githubusercontent.com/117487886/222931972-d8c7074a-2288-4e36-be0a-e0b5bc4cb901.png">
 
 SCREENCASTIFY VIDEO
 (https://watch.screencastify.com/v/wIEml7Fg4JtoCQ8rEHRA)
