@@ -31,8 +31,8 @@ Technologies used
 *Node
 *Inquirer
 *JavaScript
-*Sharecode for Screencastify VIDEO LINK
-(https://watch.screencastify.com/v/wIEml7Fg4JtoCQ8rEHRA)
+*Sharecode for SCREENCASTIFY VIDEO LINK
+https://watch.screencastify.com/v/MkdTPpiyuMsZnaNqJWzK
 
 Screen shots - included on READMe
 
@@ -50,8 +50,11 @@ Screen shots - included on READMe
 ## 🏆 BONUS
 
 * Instead of using promises, how can we use `async/await` and `try/catch` to control the flow of our asynchronous code?!
-* 
-* [Screenshot 2](https://user-images.githubusercontent.com/117487886/220480216-2603ee14-2f12-4e98-a9bd-256784acd7f5.jpg)
-* [Screenshot 3](https://user-images.githubusercontent.com/117487886/220480585-79118a00-48c0-4908-b99e-b575ae0d7c08.jpg)
-![Screenshot 1](https://user-images.githubusercontent.com/117487886/220480427-2e50be64-7dce-437f-a85a-ac544b1c18cf.jpg)
+
+SCREENSHOTS
+![image](https://user-images.githubusercontent.com/117487886/222931864-fbf2d768-89a8-4053-b039-2e9a1b2b1564.png)
+<img width="416" alt="image" src="https://user-images.githubusercontent.com/117487886/222931891-9d3aeab0-87be-4063-97cb-256e71748fdd.png">
+
+SCREENCASTIFY VIDEO
 (https://watch.screencastify.com/v/wIEml7Fg4JtoCQ8rEHRA)
+
